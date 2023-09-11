@@ -1,0 +1,9 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "knockout": "3.5.1",
+    "knockout-mapping": "2.6.0"
+  }
+}

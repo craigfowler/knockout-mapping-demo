@@ -1,0 +1,31 @@
+<h1>Knockout mapping demo</h1>
+<p>
+  This demonstrates that - at least in this trivial example - the two techniques
+  for mapping a Knockout ViewModel are functionally equivalent. This uses a
+  computed observable property added to the ViewModel to get the "firstName"
+  (using String.split) and proves that in the ViewModel that exists and has
+  appropriate functionality. It also shows that when un-mapping a ViewModel
+  created in that way, we do not get the superfluous extra properties which were
+  added by the mapping process; these are dropped from the VM when un-mapping.
+</p>
+<div>
+  <h2>Example done the old way</h2>
+  <p>
+    The following example is the result of mapping a plain data-model, enriching
+    it using a 2-phase mapping process, then un-mapping it back to plain JS.
+  </p>
+  <div id="old_way">
+    <p class="name_preview"></p>
+    <code><pre></pre></code>
+  </div>
+  <h2>Example done the new way</h2>
+  <p>
+    The following example is the result of mapping a plain data-model using
+    Knockout Mapping plugin's mapping options (single-phase mapping), then
+    un-mapping it back to plain JS.
+  </p>
+  <div id="new_way">
+    <p class="name_preview"></p>
+    <code><pre></pre></code>
+  </div>
+</div>
