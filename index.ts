@@ -29,4 +29,4 @@ displayFormattedObject(mappedTheOldWay, document.querySelector('#old_way'));
 // The new way, single-phase mapping using a class which self-maps in its own constructor
 // and has full access to customise the whole mapping process.
 const mappedTheNewWay = new EnrichTheNewWay(dataModel);
-displayFormattedObject(mappedTheOldWay, document.querySelector('#new_way'));
+displayFormattedObject(mappedTheNewWay, document.querySelector('#new_way'));

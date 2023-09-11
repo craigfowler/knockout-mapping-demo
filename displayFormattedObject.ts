@@ -9,6 +9,6 @@ export function displayFormattedObject(
   const codePreview = divElement.querySelector('code pre');
   const valueElement = divElement.querySelector('p');
 
-  valueElement.innerText = `The name is ${mappedObject.firstName()}`;
+  valueElement.innerText = `The name is ${mappedObject.firstName()}, with ${mappedObject.numberOfPets()} pets`;
   codePreview.innerHTML = JSON.stringify(unmapped, undefined, 4);
 }
